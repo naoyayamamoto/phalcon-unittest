@@ -10,5 +10,4 @@ class SampleController extends \Phalcon\Mvc\Controller
             "data" => [1, 2, 3]
         ]);
     }
-
 }
