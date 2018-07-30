@@ -1,0 +1,5 @@
+{
+    "require": {
+        "techpivot/phalcon-ci-installer": "^1.0"
+    }
+}
