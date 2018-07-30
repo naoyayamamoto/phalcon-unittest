@@ -18,6 +18,7 @@ $mc->setHandler("SampleController", true);
 $mc->setPrefix("/");
 
 $mc->get("/", "indexAction");
+$mc->get("{a:[0-9]+}/{b:[0-9]+}", "addAction");
 $app->mount($mc);
 
 /**

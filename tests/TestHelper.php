@@ -25,12 +25,7 @@ include __DIR__ . "/../app/vendor/autoload.php";
 // Autoload the dependencies found in composer
 $loader = new Loader();
 
-$loader->registerDirs(array_values(
-    // exclued files
-    array_filter((array)$config->application, function($key) {
-        return $key !== 'files' && $key !== 'namespaces';
-    }, ARRAY_FILTER_USE_KEY)
-));
+$loader->registerDirs(array_values((array)$config->application));
 
 $loader->register();
 
